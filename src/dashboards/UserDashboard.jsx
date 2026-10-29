@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const API = 'http://localhost:8081/api'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:8081/api'
 
 const STATUS_STYLES = {
   PENDING: 'bg-amber-100 text-amber-800',
